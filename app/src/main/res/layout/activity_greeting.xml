@@ -7,15 +7,11 @@
 
     <TextView
         android:id="@+id/GreetingName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="168dp"
-        android:layout_marginTop="333dp"
-        android:layout_marginEnd="185dp"
-        android:layout_marginBottom="379dp"
+        android:layout_width="120dp"
+        android:layout_height="51dp"
         android:text="Hello"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="326dp"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>
