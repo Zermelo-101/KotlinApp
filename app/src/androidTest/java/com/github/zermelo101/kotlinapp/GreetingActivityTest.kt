@@ -20,7 +20,6 @@ class GreetingActivityTest{
         greeting.putExtra("name",name)
 
         var res : ActivityScenario<GreetingActivity> = ActivityScenario.launch(greeting)
-        Thread.sleep(1000);
         onView(ViewMatchers.withText("Welcome Steve")).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
         res.close()
     }
