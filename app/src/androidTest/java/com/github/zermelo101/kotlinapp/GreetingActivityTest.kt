@@ -20,7 +20,7 @@ class GreetingActivityTest{
         greeting.putExtra("name",name)
 
         var res : ActivityScenario<GreetingActivity> = ActivityScenario.launch(greeting)
-        onView(ViewMatchers.withText("Hello Steve")).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
+        onView(ViewMatchers.withText("Welcome Steve")).check(ViewAssertions.matches(ViewMatchers.isDisplayed()))
         res.close()
     }
 
