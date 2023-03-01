@@ -11,9 +11,10 @@ class GreetingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_greeting)
         val receivedIntent : Intent = this.intent
         val name : String? = receivedIntent.getStringExtra("name")
-        setContentView(R.layout.activity_greeting)
+
         val text : TextView = findViewById<TextView>(R.id.GreetingName)
         text.text = "Welcome $name"
 
